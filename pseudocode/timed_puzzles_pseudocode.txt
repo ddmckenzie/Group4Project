@@ -1,0 +1,28 @@
+Pseudocode for timed puzzles
+Caitlin Mallory
+
+timedPuzzle(puzzle p, timeAmt t)
+	isComplete = false;
+	timeCompleted = 0;
+
+	set timer to t;
+	start timer;
+	
+	while timer > 0
+		if p is completed
+			isComplete = true;
+			stop timer;
+			timeCompleted = timer;
+			exit while loop;
+	if isComplete = true
+		give hint related to puzzle p
+		if timeCompleted >= 75% of timeAmt
+			add 4 points to healthbar;
+		else if timeCompleted >= 50% of timeAmt
+			add 3 points to healthbar;
+		else if timeCompleted >= 25% of timeAmt
+			add 2 points to healthbar;
+		else
+			add 1 point to healthbar;
+	else
+		subtract 4 points from healthbar;
