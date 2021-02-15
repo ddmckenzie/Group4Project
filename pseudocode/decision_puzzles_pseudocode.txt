@@ -1,0 +1,26 @@
+Pseudocode for decision based puzzles
+Caitlin Mallory
+
+decisionPuzzle(puzzle p)
+	isComplete = false;
+	chances = 3;
+	
+	give dialogue to solve p
+
+	while chances > 0 and isComplete = false
+		answer = user input;
+		if answer = p's answer
+			Print "Correct";
+			isComplete = true;
+			give hint related to puzzle p;
+			if chances = 3
+				add 3 points to healthbar;
+			else if chances = 2
+				add 2 points to healthbar;
+			else if chances = 1
+				add 1 point to healthbar;
+		else if answer != p's answer
+			Print "Incorrect, try again";
+			chances --;
+	if isComplete = false
+		subtract 3 points from healthbar;
