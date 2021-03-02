@@ -1,0 +1,19 @@
+Bedroom w/Bathroom
+
+Goal: Find a way to exit the room
+
+Starting conditions:
+	Hallway door locked
+	Bathroom door locked
+	Computer password locked
+	Desk bottom drawer locked
+	Fusebox closed, no known way to open.
+
+1. Desk drawer has key to bathroom, note on bathroom door hints to key location.
+2. Once in bathroom, another note on shower door gives hint towards how to find another piece of the puzzle.
+	Note: Something is wrong with the shower, no matter what you set it to, the water comes out scalding! I will 
+	schedule repairs and leave this note for anyone who might think its a good idea to take a shower.
+3. Once the shower is turned on and some time passes, the bathroom will fog up from the shower steam and the password to the computer will appear on the mirror.
+4. When you log into the computer a file type note will inform you of the tools and wiring in the bottom drawer and the location of the combination to the bottom drawer. 
+5. The combination to the bottom drawer is actually under the keyboard, but you can't interact with the keyboard until reading the computer document.
+5. Once you open the bottom drawer, you can use the tools to tamper with the fusebox and open the electronic door.
