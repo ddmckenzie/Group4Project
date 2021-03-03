@@ -1,0 +1,27 @@
+Level 2 Puzzle
+
+You leave the bedroom, and enter a hallway. Most of the doors are locked. You should notice your items in the storage room window. The only unlocked door other than the bathroom is the door to the offices. Upon entering the offices you can look around and eventually you will find the office of the lab scientist and their keycard. This keycard is used to access the lab. Once the lab is opened you can find a hint to find a certain item hidden in the bedroom. As soon as you find this item in the bedroom and take it, alarms start going off and gas starts flowing into the area. You must find the second item ASAP before being incapacitated by the gas. After the second item is found and both are inserted into their positions near the survey room, the door to the survey room is unlocked and in there you can find a button that will disable the gas, and a second button unlocks all doors. In the storage room you can retrieve your items and then exit the level. 
+
+Objects
+	Storage Room
+		Lockers
+		Crates
+		Shelves
+		Boxes
+	Survey Room
+		Surveillance camera screens
+		Office chairs
+		Computer
+		Big red button
+		Big green button
+	Offices
+		Cubicles
+		2 Private offices
+	Lab
+		Xray scans of brain
+		Relevant Lab equipment
+		Middle island counter
+		Computer
+	Hallway
+		Bulliten board
+		Surveillance cameras
