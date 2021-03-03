@@ -1,0 +1,9 @@
+1. Enter puzzle corridor
+2. Intercom person speaks, explaining rules.
+3. On entry to room, within puzzle corridor, Intercom person says the riddle the player must solve.
+	The riddle is displayed on the screen as reference.
+	If the player selects the wrong item, they lose health but get to try again as long as they still have time.
+	If the player selects the correct item, the intercom person will congratulate them and the next puzzle room will 		unlock so the player can continue.
+	If time runs out, the player loses 10 health, and all rooms lock except the room the player is in, the exit opens 	and you don't get any item. Once you exit the room, it will lock and once you exit the corridor it will lock and be 	inaccessible from this point.
+	If all the puzzles are solved in the time limit, you get an item that can help you progress, all doors unlock and 	you can exit or explore.
+4. On exiting the corridor, the intercom person gives the player some more story details.
