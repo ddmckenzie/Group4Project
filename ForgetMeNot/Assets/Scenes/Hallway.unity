@@ -224,17 +224,17 @@ PrefabInstance:
     - target: {fileID: 3717574994281382753, guid: dbe327fcac492cf478a5eff872372c67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: -0.13
       objectReference: {fileID: 0}
     - target: {fileID: 3717574994281382753, guid: dbe327fcac492cf478a5eff872372c67,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 2.38
       objectReference: {fileID: 0}
     - target: {fileID: 3717574994281382753, guid: dbe327fcac492cf478a5eff872372c67,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.3
+      value: -0.34
       objectReference: {fileID: 0}
     - target: {fileID: 3717574994281382753, guid: dbe327fcac492cf478a5eff872372c67,
         type: 3}
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 1234916006}
   - component: {fileID: 1234916005}
   - component: {fileID: 1234916004}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
