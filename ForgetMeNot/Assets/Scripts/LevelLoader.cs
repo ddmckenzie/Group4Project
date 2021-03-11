@@ -17,19 +17,27 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    public void LoadRoom1()
+    public void LoadRoom(int room) //Loads room by its scene index
     {
-        StartCoroutine(LoadLevel(1));
+        StartCoroutine(LoadLevel(room));
     }
 
-    public void LoadHallway()
+    public void LoadRoom(string room) //Loads room by its name
     {
-        StartCoroutine(LoadLevel(2));
+        StartCoroutine(LoadLevel(room));
     }
+
     IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(levelIndex);
+    }
+
+    IEnumerator LoadLevel(string name)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(name);
     }
 }
