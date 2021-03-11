@@ -311,11 +311,11 @@ Transform:
   m_LocalPosition: {x: 3.9560564, y: 2.4055605, z: 9.653322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 694590502}
   - {fileID: 759776609}
   - {fileID: 964467917}
   - {fileID: 1857648955}
   - {fileID: 145720854}
-  - {fileID: 694590502}
   - {fileID: 458349206}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 145720856}
   - component: {fileID: 145720855}
   m_Layer: 0
-  m_Name: Door (3)
+  m_Name: LabDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,7 +352,7 @@ Transform:
   m_LocalScale: {x: 1.1178285, y: 2.534648, z: 0.15829486}
   m_Children: []
   m_Father: {fileID: 137677785}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &145720855
 MonoBehaviour:
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 458349208}
   - component: {fileID: 458349207}
   m_Layer: 0
-  m_Name: Door (5)
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1448,7 +1448,7 @@ GameObject:
   - component: {fileID: 694590504}
   - component: {fileID: 694590503}
   m_Layer: 0
-  m_Name: Door (4)
+  m_Name: BedroomDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1466,7 +1466,7 @@ Transform:
   m_LocalScale: {x: 1.1178285, y: 2.534648, z: 0.15829486}
   m_Children: []
   m_Father: {fileID: 137677785}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &694590503
 MonoBehaviour:
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 759776606}
   - component: {fileID: 759776605}
   m_Layer: 0
-  m_Name: Door
+  m_Name: OfficeDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1646,7 +1646,7 @@ Transform:
   m_LocalScale: {x: 1.1178285, y: 2.534648, z: 0.15829486}
   m_Children: []
   m_Father: {fileID: 137677785}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &915705463
 PrefabInstance:
@@ -1748,7 +1748,7 @@ GameObject:
   - component: {fileID: 964467919}
   - component: {fileID: 964467918}
   m_Layer: 0
-  m_Name: Door (1)
+  m_Name: StorageRoomDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1766,7 +1766,7 @@ Transform:
   m_LocalScale: {x: 1.1178285, y: 2.534648, z: 0.15829486}
   m_Children: []
   m_Father: {fileID: 137677785}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -89.971, z: 0}
 --- !u!114 &964467918
 MonoBehaviour:
@@ -1855,7 +1855,7 @@ GameObject:
   - component: {fileID: 1857648957}
   - component: {fileID: 1857648956}
   m_Layer: 0
-  m_Name: Door (2)
+  m_Name: SurveyRoomDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1873,7 +1873,7 @@ Transform:
   m_LocalScale: {x: 1.1178285, y: 2.534648, z: 0.15829486}
   m_Children: []
   m_Father: {fileID: 137677785}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1857648956
 MonoBehaviour:
