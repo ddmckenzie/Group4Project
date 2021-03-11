@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1Updated.unity
     guid: e390a956dcb843b4ea9344d5ae54bcfe
+  - enabled: 1
+    path: Assets/Scenes/Offices.unity
+    guid: 0c8ea9835b006474ca090e1cf7e0c29c
+  - enabled: 1
+    path: Assets/Scenes/StorageRoom.unity
+    guid: c4a5a3861026b3c4da9742d8a923b30f
+  - enabled: 1
+    path: Assets/Scenes/Lab.unity
+    guid: 690544ad1f14a524ba052c54d8e1457f
   m_configObjects: {}
