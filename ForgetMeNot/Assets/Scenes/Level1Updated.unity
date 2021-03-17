@@ -1807,6 +1807,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
+      propertyPath: clip1
+      value: 
+      objectReference: {fileID: 8300000, guid: 50496a7c57b9142429cd56d2242d354f, type: 3}
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
+      propertyPath: clip2
+      value: 
+      objectReference: {fileID: 8300000, guid: bb67f6feac337f741b24ed4ee034221e, type: 3}
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1943234018}
     - target: {fileID: 4819272014726827593, guid: 527a82904f0b0a249bd9597208bf2780,
         type: 3}
       propertyPath: m_RootOrder
@@ -1866,7 +1881,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 50496a7c57b9142429cd56d2242d354f, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819272014726827594, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
+      propertyPath: BypassListenerEffects
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4819272014726827595, guid: 527a82904f0b0a249bd9597208bf2780,
         type: 3}
       propertyPath: m_Name
@@ -2589,6 +2609,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce20bca4cd6011043b42283cbedfeec1, type: 3}
+--- !u!82 &1943234018 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4819272014726827594, guid: 527a82904f0b0a249bd9597208bf2780,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278279698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1956318819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: df309d2cf9563ac4b9d0bf062981a292,
