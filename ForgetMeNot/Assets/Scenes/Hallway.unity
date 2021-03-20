@@ -172,7 +172,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Range
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8117647
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_DrawHalo
@@ -188,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
@@ -305,7 +317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
@@ -399,7 +411,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Range
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8117647
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Intensity
@@ -407,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
@@ -528,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
@@ -626,7 +650,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Range
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8117647
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Intensity
@@ -638,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
@@ -4589,7 +4625,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Range
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8117647
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Intensity
@@ -4601,7 +4649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
@@ -4826,7 +4874,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Range
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8117647
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Intensity
@@ -4834,7 +4894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498671197, guid: 284efe876e2affe4a983197c9823b909, type: 3}
       propertyPath: m_BounceIntensity
