@@ -1779,7 +1779,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clip2
       value: 
-      objectReference: {fileID: 8300000, guid: bb67f6feac337f741b24ed4ee034221e, type: 3}
+      objectReference: {fileID: 8300000, guid: f75b4e6dcb9f06945b75ba01dddb171c, type: 3}
     - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
         type: 3}
       propertyPath: audioSource
