@@ -9,19 +9,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu Scene.unity
     guid: e4bbbe6e08234234592fa5fd48e14fca
   - enabled: 1
-    path: Assets/Scenes/Hallway.unity
+    path: Assets/Scenes/DemoScenes/HallwayDemo.unity
     guid: 4ff4eedae6de80f4998fc1661251ba98
   - enabled: 1
-    path: Assets/Scenes/Level1Updated.unity
+    path: Assets/Scenes/Bedroom.unity
     guid: e390a956dcb843b4ea9344d5ae54bcfe
   - enabled: 1
-    path: Assets/Scenes/Offices.unity
+    path: Assets/Scenes/DemoScenes/Offices.unity
     guid: 0c8ea9835b006474ca090e1cf7e0c29c
   - enabled: 1
-    path: Assets/Scenes/StorageRoom.unity
+    path: Assets/Scenes/DemoScenes/StorageRoom.unity
     guid: c4a5a3861026b3c4da9742d8a923b30f
   - enabled: 1
-    path: Assets/Scenes/Lab.unity
+    path: Assets/Scenes/DemoScenes/Lab.unity
     guid: 690544ad1f14a524ba052c54d8e1457f
   - enabled: 1
     path: Assets/Scenes/Scene1.unity
