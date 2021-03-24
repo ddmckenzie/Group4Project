@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class objectsToCollect : MonoBehaviour
+public class ObjectsToCollect : MonoBehaviour
 {
     public static int objects = 0;
 
@@ -21,6 +20,6 @@ public class objectsToCollect : MonoBehaviour
             objects--;
             gameObject.SetActive(false);
         }
-        
+
     }
 }

@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 0.427
   m_CustomReflection: {fileID: 8900000, guid: b39fb8091850a2544ae1e804681b401c, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24531457, g: 0.25066027, b: 0.23521873, a: 0.427}
+  m_IndirectSpecularColor: {r: 0.24531451, g: 0.25066015, b: 0.23521888, a: 0.427}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -99,7 +99,8 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: d8a79432c9c0d4846baa5426a7db9ed0,
     type: 2}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: a45b0584c50ec3c49a1b572756d3d676,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,6 +120,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -914,6 +917,46 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00000004576758
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00000005574959
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999577
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000029802319
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00920123
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699882852032395511, guid: ee9628b34be11e24eae4a5182cf4c91f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -1.054
+      objectReference: {fileID: 0}
     - target: {fileID: 3699882852283084669, guid: ee9628b34be11e24eae4a5182cf4c91f,
         type: 3}
       propertyPath: m_Name
@@ -1302,6 +1345,7 @@ Mesh:
   m_MeshMetrics[1]: 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
+    serializedVersion: 2
     offset: 0
     size: 0
     path: 
@@ -4680,6 +4724,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4708,6 +4753,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1031399776
 MeshFilter:
   m_ObjectHideFlags: 10
