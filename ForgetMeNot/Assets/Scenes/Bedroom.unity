@@ -502,7 +502,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3255
+      value: 1.4771372
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
@@ -512,17 +512,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3255
+      value: 1.4987428
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.57
+      value: -7.59
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.79
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
@@ -564,6 +564,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: c4e90f8393047604d9aa6362856c0edd,
+        type: 3}
+      propertyPath: m_Name
+      value: SinkDoor4
+      objectReference: {fileID: 0}
+    - target: {fileID: -7146521406498821007, guid: c4e90f8393047604d9aa6362856c0edd,
+        type: 3}
+      propertyPath: m_Name
+      value: SinkDoor1
+      objectReference: {fileID: 0}
     - target: {fileID: -6093592463355912122, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -589,10 +599,20 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 48629c83121b14a44b5c652e4633a311, type: 2}
+    - target: {fileID: -516098083770646512, guid: c4e90f8393047604d9aa6362856c0edd,
+        type: 3}
+      propertyPath: m_Name
+      value: SinkDoor2
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c4e90f8393047604d9aa6362856c0edd,
         type: 3}
       propertyPath: m_Name
       value: BathroomCounterandSink
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416272007918961125, guid: c4e90f8393047604d9aa6362856c0edd,
+        type: 3}
+      propertyPath: m_Name
+      value: SinkDoor3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4e90f8393047604d9aa6362856c0edd, type: 3}
@@ -1393,7 +1413,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20838
+  m_Name: pb_Mesh22568
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5060,6 +5080,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034610162074701090}
+  - component: {fileID: 1691017568987158427}
+  - component: {fileID: 1691017568987158426}
+  - component: {fileID: 1691017568987158425}
   m_Layer: 0
   m_Name: Desktop
   m_TagString: Untagged
@@ -5067,6 +5090,71 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1691017568987158425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691017568987158424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062510eb22e7f5c4c836ae22fde43916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1691017568987158426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691017568987158424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1266742, y: 2.9143288, z: 1}
+  m_Center: {x: 0.01166778, y: 1.3921205, z: 2.4503022e-17}
+--- !u!227 &1691017568987158427
+BillboardRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691017568987158424}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Billboard: {fileID: 0}
 --- !u!23 &1696500289205204364
 MeshRenderer:
   m_ObjectHideFlags: 0
