@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class objectsToCollect : MonoBehaviour
+public class ObjectsToCollect : MonoBehaviour
 {
     public static int objects = 0;
-    // Start is called before the first frame update
+
+    // Use this for initialization
     void Awake()
     {
         objects++;
     }
 
     // Update is called once per frame
-    void OnTriggerEnter(Collider plyr)
+    void OnMouseDown()
     {
-        if (plyr.gameObject.tag == "Player") {
+        if (gameObject.tag == "Key")
+        {
             objects--;
             gameObject.SetActive(false);
         }
+
     }
 }
