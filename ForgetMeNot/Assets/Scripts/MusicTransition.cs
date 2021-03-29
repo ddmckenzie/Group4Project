@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicTransition : MonoBehaviour
 {
     private static MusicTransition instance;
+    public AudioSource audioSource;
+    public AudioClip clip1;
+    public AudioClip clip2;
 
     void Awake()
     {
