@@ -12,9 +12,9 @@ public class objectsToCollect : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerEnter(Collider plyr)
+    void OnMouseDown()
     {
-        if (plyr.gameObject.tag == "Player") {
+        if (gameObject.tag == "Key") {
             objects--;
             gameObject.SetActive(false);
         }
