@@ -9,6 +9,8 @@ public class MusicTransition : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clip1;
     public AudioClip clip2;
+    public Animator fader;
+    public float transitionTime = 1f;
 
     void Awake()
     {
@@ -34,18 +36,21 @@ public class MusicTransition : MonoBehaviour
         {
             if (audioSource.clip!=clip1)
             {
-                changeClip(clip1);
+                StartCoroutine(changeClip(clip1));
             }
         }
         else
         {
             if (audioSource.clip!=clip2) {
-                changeClip(clip2);
+                StartCoroutine(changeClip(clip2));
             }
         }
     }
 
-    void changeClip(AudioClip clip) {
+    IEnumerator changeClip(AudioClip clip)
+    { 
+        fader.SetTrigger("fade");
+        yield return new WaitForSeconds(transitionTime);
         audioSource.Stop();
         audioSource.clip = clip;
         audioSource.Play();
