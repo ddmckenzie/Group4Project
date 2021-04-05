@@ -49,11 +49,13 @@ public class MusicTransition : MonoBehaviour
 
     IEnumerator changeClip(AudioClip clip)
     { 
-        fader.SetTrigger("fade");
+        fader.SetTrigger("fadeout");
         yield return new WaitForSeconds(transitionTime);
         audioSource.Stop();
         audioSource.clip = clip;
         audioSource.Play();
+        yield return new WaitForSeconds(transitionTime);
+        fader.SetTrigger("fadein");
     }
 }
 
