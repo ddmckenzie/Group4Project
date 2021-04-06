@@ -9,6 +9,8 @@ public class MusicTransition : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clip1;
     public AudioClip clip2;
+    public Animator fader;
+    public float transitionTime = 1f;
 
     void Awake()
     {
@@ -34,35 +36,26 @@ public class MusicTransition : MonoBehaviour
         {
             if (audioSource.clip!=clip1)
             {
-                changeClip(clip1);
+                StartCoroutine(changeClip(clip1));
             }
         }
         else
         {
             if (audioSource.clip!=clip2) {
-                changeClip(clip2);
+                StartCoroutine(changeClip(clip2));
             }
         }
     }
 
-    void changeClip(AudioClip clip) {
+    IEnumerator changeClip(AudioClip clip)
+    { 
+        fader.SetTrigger("fadeout");
+        yield return new WaitForSeconds(transitionTime);
         audioSource.Stop();
         audioSource.clip = clip;
         audioSource.Play();
-    }
-
-    IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
-    {
-        float currentTime = 0;
-        float start = audioSource.volume;
-
-        while (currentTime < duration)
-        {
-            currentTime += Time.deltaTime;
-            audioSource.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
-            yield return null;
-        }
-        yield break;
+        yield return new WaitForSeconds(transitionTime);
+        fader.SetTrigger("fadein");
     }
 }
 
