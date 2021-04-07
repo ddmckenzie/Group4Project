@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class objectsToCollect : MonoBehaviour
 {
-    public static int objects = 0;
+    public static int keys = 0;
     // Start is called before the first frame update
     void Awake()
     {
-        objects++;
+        keys++;
     }
 
     // Update is called once per frame
     void OnMouseDown()
     {
         if (gameObject.tag == "Key") {
-            objects--;
+            keys--;
             gameObject.SetActive(false);
         }
     }

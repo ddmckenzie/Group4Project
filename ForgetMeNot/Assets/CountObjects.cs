@@ -18,9 +18,9 @@ public class CountObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        objUI.GetComponent<Text>().text = objectsToCollect.objects.ToString() + " - Key to collect.";
+        objUI.GetComponent<Text>().text = objectsToCollect.keys.ToString() + " - Key to collect.";
 
-        if (objectsToCollect.objects == 0)
+        if (objectsToCollect.keys == 0)
         {
             objUI.GetComponent<Text>().text = "Bathroom Unlocked!";
             Fade.Play();
