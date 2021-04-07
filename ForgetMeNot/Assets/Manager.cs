@@ -7,9 +7,11 @@ public class Manager : MonoBehaviour
 
     public ArrayList doorsUnlocked = new ArrayList();
 
-    bool scienceIdfound;
-    bool item1Found;
-    bool item2Found;
+    bool key;
+    bool screwdriver;
+    bool scienceId;
+    bool item1;
+    bool item2;
     bool bedroomUnlocked;
     bool officeUnlocked;
     bool surveyUnlocked;
@@ -33,20 +35,20 @@ public class Manager : MonoBehaviour
 
     void foundScienceID()
     {
-        scienceIdfound = true;
+        scienceId = true;
         doorsUnlocked[3] = true;
     }
 
     void foundItem1()
     {
-        item1Found = true;
+        item1 = true;
         //Show item 2
         //release Gas and start timer
     }
 
     void foundItem2()
     {
-        item2Found = true;
+        item2 = true;
         doorsUnlocked[2] = true;
     }
 

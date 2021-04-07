@@ -32,7 +32,7 @@ public class MusicTransition : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Bedroom")
+        if (SceneManager.GetActiveScene().name == "Bedroom" || SceneManager.GetActiveScene().name == "Combination")
         {
             if (audioSource.clip!=clip1)
             {
