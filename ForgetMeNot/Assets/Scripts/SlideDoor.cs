@@ -16,7 +16,7 @@ public class SlideDoor : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (objectsToCollect.objects == 0)
+        if (objectsToCollect.keys == 0)
         {
             Invoke("Coroutine", 0f);
         }
