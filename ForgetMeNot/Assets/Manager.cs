@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-
+    public static Manager instance;
     public ArrayList doorsUnlocked = new ArrayList();
+    public Healthbar healthBar;
 
-    bool key;
-    bool screwdriver;
-    bool scienceId;
-    bool item1;
-    bool item2;
-    bool bedroomUnlocked;
-    bool officeUnlocked;
-    bool surveyUnlocked;
-    bool labUnlocked;
-    bool storageUnlocked;
-    bool exitUnlocked;
+    public bool key;
+    public bool screwdriver;
+    public bool scienceId;
+    public bool item1;
+    public bool item2;
+    public bool bedroomUnlocked;
+    public bool officeUnlocked;
+    public bool surveyUnlocked;
+    public bool labUnlocked;
+    public bool storageUnlocked;
+    public bool exitUnlocked;
 
     public int maxHealth = 100;
-    public int currentHealth;
+    public int currentHealth = 50;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -31,28 +45,41 @@ public class Manager : MonoBehaviour
         doorsUnlocked.Add(storageUnlocked);
         doorsUnlocked.Add(exitUnlocked);
 
+        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth);
+
     }
 
-    void foundScienceID()
+    public void foundKey()
+    {
+        key = true;
+    }
+
+    public void foundScrewDriver()
+    {
+        screwdriver = true;
+    }
+
+    public void foundScienceID()
     {
         scienceId = true;
         doorsUnlocked[3] = true;
     }
 
-    void foundItem1()
+    public void foundItem1()
     {
         item1 = true;
         //Show item 2
         //release Gas and start timer
     }
 
-    void foundItem2()
+    public void foundItem2()
     {
         item2 = true;
         doorsUnlocked[2] = true;
     }
 
-    void unlockStorageAndExit()
+    public void unlockStorageAndExit()
     {
         doorsUnlocked[4] = true;
         doorsUnlocked[5] = true;
