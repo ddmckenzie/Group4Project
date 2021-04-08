@@ -6,15 +6,23 @@ public class HealthPickup : MonoBehaviour
 {
     public Healthbar hb;
     public Manager man;
+    AudioSource healthAudio;
 
+    void Start()
+    {
+        healthAudio = GetComponent<AudioSource>();   
+    }
     // Start is called before the first frame update
     void OnMouseDown()
     {
+        healthAudio.Play();
+        
         if (gameObject.tag == "HealthPU") 
         {
             gameObject.SetActive(false);
             //addHealth();
         }
+        
     }
 
     //void OnTriggerEnter(Collider coll)
