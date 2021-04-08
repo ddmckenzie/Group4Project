@@ -13,23 +13,23 @@ public class HealthPickup : MonoBehaviour
         if (gameObject.tag == "HealthPU") 
         {
             gameObject.SetActive(false);
-            //addHealth();
+            addHealth();
         }
     }
 
-    //void OnTriggerEnter(Collider coll)
-    //{
-    //    if (gameObject.tag == "HealthPU")
-    //    {
-    //        gameObject.SetActive(false);
-    //        addHealth();
-    //    }
-    //}
+    void OnTriggerEnter(Collider coll)
+    {
+        if (gameObject.tag == "HealthPU")
+        {
+            gameObject.SetActive(false);
+            addHealth();
+        }
+    }
 
     // Update is called once per frame
     void addHealth()
     {
-        //man.currentHealth += 10;
-        //hb.SetHealth(man.currentHealth);
+        man.currentHealth += 10;
+        hb.SetHealth(man.currentHealth);
     }
 }
