@@ -6,10 +6,16 @@ using UnityEngine.UI;
 //Script based of tuturial by Brackeys
 public class Healthbar : MonoBehaviour
 {
-
+    public Manager manager;
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+
+    void Start()
+    {
+        SetMaxHealth(manager.maxHealth);
+        SetHealth(manager.currentHealth);
+    }
 
     public void SetMaxHealth(int health)
     {

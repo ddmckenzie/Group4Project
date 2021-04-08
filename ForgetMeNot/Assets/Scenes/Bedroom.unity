@@ -881,6 +881,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthbar
       objectReference: {fileID: 0}
+    - target: {fileID: 7127412146145876509, guid: 506ae248b30bdfa41a5e05189e3da7c1,
+        type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 5018998264085547492, guid: fc2f69e1b99e456479d9cd8a2c3d9000,
+        type: 3}
     - target: {fileID: 7127412146145876511, guid: 506ae248b30bdfa41a5e05189e3da7c1,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1924,7 +1930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7077e69500a04fd4b9ccf163f8d1cddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1964824527}
+  manager: {fileID: 5018998264085547492, guid: fc2f69e1b99e456479d9cd8a2c3d9000, type: 3}
 --- !u!65 &605110997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3037,7 +3043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212a63ca54e35dc4990075d39345d2b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 1964824527}
+  manager: {fileID: 5018998264085547492, guid: fc2f69e1b99e456479d9cd8a2c3d9000, type: 3}
 --- !u!114 &1144918339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3107,7 +3113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hb: {fileID: 1776222413}
-  man: {fileID: 1964824527}
+  man: {fileID: 5018998264085547492, guid: fc2f69e1b99e456479d9cd8a2c3d9000, type: 3}
 --- !u!1 &1182845910
 GameObject:
   m_ObjectHideFlags: 0
@@ -7002,18 +7008,6 @@ PrefabInstance:
       objectReference: {fileID: 1776222413}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc2f69e1b99e456479d9cd8a2c3d9000, type: 3}
---- !u!114 &1964824527 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5018998264085547492, guid: fc2f69e1b99e456479d9cd8a2c3d9000,
-    type: 3}
-  m_PrefabInstance: {fileID: 1964824526}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffb6720bf49a115438b1c12cfebc7e28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!850595691 &2002613871
 LightingSettings:
   m_ObjectHideFlags: 0
