@@ -16,6 +16,15 @@ public class playerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    AudioSource aus;
+    CharacterController cc;
+    playerMovement pm;
+    
+    void Start()
+    {
+        aus = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +45,27 @@ public class playerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         
         controller.Move(velocity * Time.deltaTime);
+        
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            aus.Play();
+        }
+        
+        else if (Input.GetKeyUp(KeyCode.W)) 
+        {
+            aus.Stop();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            aus.Play();
+            aus.pitch = 2;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift)) 
+        {
+            aus.pitch = 1;
+            aus.Play();
+        }
 
     }
 }
