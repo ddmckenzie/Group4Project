@@ -9,8 +9,7 @@ public class objectsToCollect : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        //keys++;
-        keys=1;
+        keys++;
     }
 
     // Update is called once per frame
