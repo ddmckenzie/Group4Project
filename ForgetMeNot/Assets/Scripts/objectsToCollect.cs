@@ -6,6 +6,7 @@ public class objectsToCollect : MonoBehaviour
 {
     public Manager manager;
     public static int keys = 0;
+    AudioSource keyAudio;
     // Start is called before the first frame update
     void Awake()
     {
@@ -13,6 +14,10 @@ public class objectsToCollect : MonoBehaviour
         keys=1;
     }
 
+    void Start()
+    {
+        keyAudio = GameObject.Find("GameObject key").GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void OnMouseDown()
     {
@@ -20,6 +25,7 @@ public class objectsToCollect : MonoBehaviour
             keys--;
             gameObject.SetActive(false);
             manager.foundKey();
+            keyAudio.Play();
         }
     }
 }
