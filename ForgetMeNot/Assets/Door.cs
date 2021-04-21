@@ -5,13 +5,16 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public LevelLoader loader;
+    int index;
+
+    void Start()
+    {
+        index = transform.GetSiblingIndex();
+    }
 
     void OnMouseDown()
     {
-        int index = transform.GetSiblingIndex();
-        
         loader.LoadRoom(index + 2);
-        
     }
 
 }
