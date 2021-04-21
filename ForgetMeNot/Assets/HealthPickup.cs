@@ -10,17 +10,17 @@ public class HealthPickup : MonoBehaviour
 
     void Start()
     {
-        healthAudio = GetComponent<AudioSource>();   
+        healthAudio = GameObject.Find("GameObject health").GetComponent<AudioSource>();   
     }
-    // Start is called before the first frame update
+
     void OnMouseDown()
     {
         healthAudio.Play();
         
-        if (gameObject.tag == "HealthPU") 
+        if (gameObject.tag == "HealthPU") //health is below 100
         {
             gameObject.SetActive(false);
-            addHealth();
+            //addHealth();
         }
         
     }
@@ -30,14 +30,14 @@ public class HealthPickup : MonoBehaviour
         if (gameObject.tag == "HealthPU")
         {
             gameObject.SetActive(false);
-            addHealth();
+            //addHealth();
         }
     }
 
     // Update is called once per frame
     void addHealth()
     {
-        man.currentHealth += 10;
-        hb.SetHealth(man.currentHealth);
+        //man.currentHealth += 10;
+        //hb.SetHealth(man.currentHealth);
     }
 }
