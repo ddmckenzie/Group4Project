@@ -17,7 +17,15 @@ public class DoorsManager : MonoBehaviour
 
         for (int i = 1; i < transform.childCount; i++)
         {
-            transform.GetChild(i).GetComponent<BoxCollider>().enabled = false;
+            if (transform.GetChild(i).GetComponent<BoxCollider>() == true)
+            {
+                transform.GetChild(i).GetComponent<BoxCollider>().enabled = false;
+            }
+            else
+            {
+                transform.GetChild(i).Find("Door").GetComponent<BoxCollider>().enabled = false;
+            }
+            
         }
 
         switch (doorsUnlocked)
@@ -36,7 +44,15 @@ public class DoorsManager : MonoBehaviour
             case 3:
                 for (int i = 1; i < transform.childCount; i++)
                 {
-                    transform.GetChild(i).GetComponent<BoxCollider>().enabled = true;
+                    if (transform.GetChild(i).GetComponent<BoxCollider>() == true)
+                    {
+                        transform.GetChild(i).GetComponent<BoxCollider>().enabled = true;
+                    }
+                    else
+                    {
+                        transform.GetChild(i).Find("Door").GetComponent<BoxCollider>().enabled = true;
+                    }
+
                 }
                 Debug.Log("All rooms are unlocked");
                 break;
@@ -49,7 +65,15 @@ public class DoorsManager : MonoBehaviour
     {
         for (int i = 1; i < transform.childCount; i++)
         {
-            transform.GetChild(i).GetComponent<BoxCollider>().enabled = false;
+            if (transform.GetChild(i).GetComponent<BoxCollider>() == true)
+            {
+                transform.GetChild(i).GetComponent<BoxCollider>().enabled = false;
+            }
+            else
+            {
+                transform.GetChild(i).Find("Door").GetComponent<BoxCollider>().enabled = false;
+            }
+
         }
         PlayerPrefs.DeleteAll();
     }

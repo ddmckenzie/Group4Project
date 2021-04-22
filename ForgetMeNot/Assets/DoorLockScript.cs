@@ -11,21 +11,19 @@ public class DoorLockScript : MonoBehaviour
 
     //If box collider is enabled, deactivate the lock icon
     //If the boc collider is not enabled, activate the lock icon
-    //If no box collider exists, destroy the lock icon
+    //If no box collider exists, deactivate the lock icon
     void Start()
     {
         if (GetComponent<BoxCollider>() == true)
         {
             isUnlocked = GetComponent<BoxCollider>().enabled;
-
-            if (isUnlocked == true)
-            {
-                transform.Find("LockImage").gameObject.SetActive(false);
-            }
-            else
-            {
-                transform.Find("LockImage").gameObject.SetActive(true);
-            }
+            setLockImage();
+;            
+        }
+        else if (transform.Find("Door").GetComponent<BoxCollider>() == true)
+        {
+            isUnlocked = transform.Find("Door").GetComponent<BoxCollider>().enabled;
+            setLockImage();
         }
         else
         {
@@ -33,5 +31,16 @@ public class DoorLockScript : MonoBehaviour
         }
     }
 
-    
+    //Activates or deactivates the lock icon
+    void setLockImage()
+    {
+        if (isUnlocked == true)
+        {
+            transform.Find("LockImage").gameObject.SetActive(false);
+        }
+        else
+        {
+            transform.Find("LockImage").gameObject.SetActive(true);
+        }
+    }
 }
