@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Keeps track of game progress in order to unlock certain doors
+
 public class DoorsManager : MonoBehaviour
 {
     int doorsUnlocked;
 
-    void Start()
+    //Enables the box colliders for the doors based on the progress number in PlayerPrefs
+    void Awake()
     {
         doorsUnlocked = PlayerPrefs.GetInt("DoorsUnlocked");
         transform.GetChild(0).GetComponent<BoxCollider>().enabled = true;
@@ -41,6 +44,7 @@ public class DoorsManager : MonoBehaviour
 
     }
 
+    //Resets the doors to all be locked
     public void resetProgress()
     {
         for (int i = 1; i < transform.childCount; i++)

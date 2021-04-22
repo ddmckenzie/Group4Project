@@ -10,6 +10,7 @@ public class Door : MonoBehaviour
     void Start()
     {
         index = transform.GetSiblingIndex();
+        
     }
 
     void OnMouseDown()
