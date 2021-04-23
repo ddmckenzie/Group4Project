@@ -62,42 +62,5 @@ public class Manager : MonoBehaviour
         Debug.Log("screwdriver found");
     }
 
-    public void unlockBedroom()
-    {
-        doorsUnlocked[0] = true;
-        Debug.Log("bedroom unlocked");
-    }
-
-    public void foundScienceID()
-    {
-        scienceId = true;
-        doorsUnlocked[3] = true;
-        Debug.Log("scienceID found");
-        Debug.Log("lab unlocked");
-    }
-
-    public void foundItem1()
-    {
-        item1 = true;
-        //Show item 2
-        //release Gas and start timer
-        Debug.Log("item 1 found");
-        Debug.Log("item 2 available");
-    }
-
-    public void foundItem2()
-    {
-        item2 = true;
-        doorsUnlocked[2] = true;
-        Debug.Log("item 2 found");
-        Debug.Log("survey room unlocked");
-    }
-
-    public void unlockStorageAndExit()
-    {
-        doorsUnlocked[4] = true;
-        doorsUnlocked[5] = true;
-        Debug.Log("storage unlocked");
-        Debug.Log("exit unlocked");
-    }
+    
 }
