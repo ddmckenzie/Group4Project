@@ -36,6 +36,7 @@ public class PickupScript : MonoBehaviour
         if (gameObject.tag == "HealthPU")
         {
             gameObject.SetActive(false);
+            healthAudio.Play();
             //addHealth();
         }
         
