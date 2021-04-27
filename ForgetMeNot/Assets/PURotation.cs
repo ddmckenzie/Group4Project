@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeartRotation : MonoBehaviour
+public class PURotation : MonoBehaviour
 {
 
     // Update is called once per frame

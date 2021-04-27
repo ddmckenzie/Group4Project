@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Key
   - HealthPU
+  - ShieldPU
   layers:
   - Default
   - TransparentFX
