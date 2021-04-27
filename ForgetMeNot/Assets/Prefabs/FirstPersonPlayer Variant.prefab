@@ -520,6 +520,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedBoost: 7
+--- !u!114 &1451064526137587130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3699882852283084669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b824511a9ec961741821b07db33930a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  gasOn: 0
+  healthBar: {fileID: 0}
 --- !u!1001 &58517225125981215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -600,7 +616,7 @@ PrefabInstance:
     - target: {fileID: 3717574994281382754, guid: dbe327fcac492cf478a5eff872372c67,
         type: 3}
       propertyPath: m_Name
-      value: FirstPersonPlayer
+      value: FirstPersonPlayer Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3717574994567566568, guid: dbe327fcac492cf478a5eff872372c67,
         type: 3}
