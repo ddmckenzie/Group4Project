@@ -8,21 +8,23 @@ public class CountObjects : MonoBehaviour
     public string nextLevel;
     GameObject objUI;
     private Animation Fade;
+    AudioSource unlockedAudio;
 
-    // Use this for initialization
     void Start()
     {
+        unlockedAudio = GameObject.Find("GameObject unlocked").GetComponent<AudioSource>();
         objUI = GameObject.Find("ObjectNum");
         Fade = objUI.GetComponent<Animation>();
     }
     // Update is called once per frame
     void Update()
     {
-        objUI.GetComponent<Text>().text = objectsToCollect.keys.ToString() + " key needed";
+        objUI.GetComponent<Text>().text = "Find The Key";
 
         if (objectsToCollect.keys == 0)
         {
             objUI.GetComponent<Text>().text = "Bathroom Unlocked!";
+            unlockedAudio.Play();
             Fade.Play();
         }
 
