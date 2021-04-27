@@ -7,6 +7,7 @@ TagManager:
   - Key
   - HealthPU
   - ShieldPU
+  - Hazard
   layers:
   - Default
   - TransparentFX
