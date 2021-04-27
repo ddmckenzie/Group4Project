@@ -2,27 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPickup : MonoBehaviour
+public class PickupScript : MonoBehaviour
 {
     public Healthbar hb;
     public Manager man;
     AudioSource healthAudio;
+    AudioSource shieldAudio;
 
     void Start()
     {
-        healthAudio = GameObject.Find("GameObject health").GetComponent<AudioSource>();   
+        healthAudio = GameObject.Find("GameObject health").GetComponent<AudioSource>();
+        shieldAudio = GameObject.Find("GameObject shield").GetComponent<AudioSource>();
     }
 
     void OnMouseDown()
     {
-        healthAudio.Play();
         
         if (gameObject.tag == "HealthPU") //health is below 100
         {
             gameObject.SetActive(false);
+            healthAudio.Play();
             //addHealth();
         }
-        
+        if (gameObject.tag == "ShieldPU") 
+        {
+            gameObject.SetActive(false);
+            shieldAudio.Play();
+        }
     }
 
     void OnTriggerEnter(Collider coll)
@@ -31,6 +37,12 @@ public class HealthPickup : MonoBehaviour
         {
             gameObject.SetActive(false);
             //addHealth();
+        }
+        
+        if (gameObject.tag == "ShieldPU")
+        {
+            gameObject.SetActive(false);
+            shieldAudio.Play();
         }
     }
 
