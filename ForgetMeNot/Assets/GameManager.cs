@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public float health;
 
-    public List<GameObject> inventory;
+    //public List<GameObject> inventory;
 
     private void Awake()
     {
@@ -20,7 +22,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //respawnPoint = player's position
+        respawnPoint = new Vector3(0,0,0);
 
         if (SaveManager.instance.hasLoaded)
         {
@@ -29,12 +31,19 @@ public class GameManager : MonoBehaviour
 
             health = SaveManager.instance.activeSave.health;
 
-            inventory = SaveManager.instance.activeSave.inventory;
+            //foreach (GameObject i in SaveManager.instance.activeSave.inventory)
+            //{
+            //    inventory.Add(i);
+            //}
+            
         }
         else
         {
             SaveManager.instance.activeSave.health = health;
-            SaveManager.instance.activeSave.inventory = inventory;
+            //foreach (GameObject i in inventory)
+            //{
+            //    SaveManager.instance.activeSave.inventory.Add(i);
+            //}
         }
     }
 

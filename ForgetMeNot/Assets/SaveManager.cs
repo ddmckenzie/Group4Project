@@ -97,5 +97,5 @@ public class SaveData
 
     public float health;
 
-    public List<GameObject> inventory;
+    //public List<GameObject> inventory;
 }
