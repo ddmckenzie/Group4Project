@@ -7,7 +7,6 @@ using System.Xml.Serialization;
 
 public class SaveManager : MonoBehaviour
 {
-
     public static SaveManager instance;
 
     public SaveData activeSave;
@@ -97,5 +96,7 @@ public class SaveData
 
     public float health;
 
-    //public List<GameObject> inventory;
+    public int levelProgress;
+
+    public List<string> inventory;
 }
