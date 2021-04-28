@@ -95,6 +95,7 @@ public class SaveData
 
     public Vector3 respawnPosition;
 
-    public int health;
+    public float health;
 
+    public List<GameObject> inventory;
 }
