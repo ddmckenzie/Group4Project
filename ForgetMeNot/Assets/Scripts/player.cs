@@ -21,6 +21,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentHealth = healthBar.slider.value; // This is a temporary fix but is kinda buggy
         if (gasOn)
         {
             TakeDamage(0.1f);  
