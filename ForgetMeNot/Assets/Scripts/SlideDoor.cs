@@ -7,11 +7,13 @@ public class SlideDoor : MonoBehaviour
 
     private bool DoorOpened;
     private Vector3 DoorStartPos;
+    AudioSource bathroomDoor_Audio;
 
     void Start()
     {
         DoorOpened = false;
         DoorStartPos = transform.position;
+        bathroomDoor_Audio = GameObject.Find("GameObject bathroom door").GetComponent<AudioSource>();
     }
 
     private void OnMouseDown()
@@ -19,7 +21,9 @@ public class SlideDoor : MonoBehaviour
         if (objectsToCollect.keys == 0)
         {
             Invoke("Coroutine", 0f);
+            bathroomDoor_Audio.Play();
         }
+        //bathroomDoor_Audio.Play();
     }
     private void Coroutine()
     {
@@ -54,7 +58,6 @@ public class SlideDoor : MonoBehaviour
 
                 yield return new WaitForSeconds(0f);
             }
-
             transform.position = DoorStartPos;
             DoorOpened = false;
         }

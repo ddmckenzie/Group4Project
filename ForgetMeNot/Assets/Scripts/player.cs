@@ -7,14 +7,15 @@ public class player : MonoBehaviour
     public float maxHealth = 100f;
     public float currentHealth;
     public bool gasOn;
-
     public Healthbar healthBar;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        currentHealth = maxHealth/2;
         healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetHealth(currentHealth);
         gasOn = false;
+
     }
 
     // Update is called once per frame
@@ -38,11 +39,11 @@ public class player : MonoBehaviour
         }
     }
 
-    
 
     void TakeDamage(float damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+   
 }
