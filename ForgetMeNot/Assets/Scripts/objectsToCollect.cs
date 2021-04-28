@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class objectsToCollect : MonoBehaviour
 {
-    public Manager manager;
     public static int keys = 0;
     AudioSource keyAudio;
     // Start is called before the first frame update
@@ -24,7 +23,6 @@ public class objectsToCollect : MonoBehaviour
         if (gameObject.tag == "Key") {
             keys--;
             gameObject.SetActive(false);
-            manager.foundKey();
             keyAudio.Play();
         }
     }
