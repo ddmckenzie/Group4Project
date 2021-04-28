@@ -7,6 +7,8 @@ TagManager:
   - Key
   - HealthPU
   - ShieldPU
+  - Electronic Door
+  - Hazard
   layers:
   - Default
   - TransparentFX
