@@ -58,14 +58,12 @@ public class playerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            aus.Play();
             aus.pitch = 2;
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift)) 
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             aus.pitch = 1;
-            aus.Play();
         }
-
+        
     }
 }
