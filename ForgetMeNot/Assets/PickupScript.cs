@@ -5,14 +5,16 @@ using UnityEngine;
 public class PickupScript : MonoBehaviour
 {
     public Healthbar hb;
-    public Manager man;
+    public GameObject player;
     AudioSource healthAudio;
     AudioSource shieldAudio;
+    private playerController _playerCScript;
 
     void Start()
     {
         healthAudio = GameObject.Find("GameObject health").GetComponent<AudioSource>();
         shieldAudio = GameObject.Find("GameObject shield").GetComponent<AudioSource>();
+        _playerCScript = player.GetComponent<playerController>();
     }
 
     void OnMouseDown()
@@ -22,8 +24,9 @@ public class PickupScript : MonoBehaviour
         {
             gameObject.SetActive(false);
             healthAudio.Play();
-            //addHealth();
+            _playerCScript.AddHealth(10f);
         }
+        
         if (gameObject.tag == "ShieldPU") 
         {
             gameObject.SetActive(false);
@@ -36,7 +39,8 @@ public class PickupScript : MonoBehaviour
         if (gameObject.tag == "HealthPU")
         {
             gameObject.SetActive(false);
-            //addHealth();
+            healthAudio.Play();
+            _playerCScript.AddHealth(10f);
         }
         
         if (gameObject.tag == "ShieldPU")
@@ -46,10 +50,10 @@ public class PickupScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void addHealth()
-    {
-        //man.currentHealth += 10;
-        //hb.SetHealth(man.currentHealth);
-    }
+    //void AddHealth(float health) 
+    //{
+        //addH += health;
+        //hb.SetHealth(addH);
+    //}
+
 }
