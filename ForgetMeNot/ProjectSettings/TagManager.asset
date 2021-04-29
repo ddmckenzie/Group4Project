@@ -9,6 +9,8 @@ TagManager:
   - ShieldPU
   - Electronic Door
   - Hazard
+  - Heat Hazard
+  - Hallway
   layers:
   - Default
   - TransparentFX
