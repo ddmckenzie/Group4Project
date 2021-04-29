@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
             //Change player's position to that point
 
             health = SaveManager.instance.activeSave.health;
+            //FirstPersonPlayer.GetComponent<>
 
             levelProgress = SaveManager.instance.activeSave.levelProgress;
 
