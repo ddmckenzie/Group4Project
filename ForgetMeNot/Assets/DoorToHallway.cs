@@ -15,6 +15,5 @@ public class DoorToHallway : MonoBehaviour
     {
         doorAudio.Play();
         loader.LoadRoom("Hallway");
-        //doorAudio.Play();
     }
 }

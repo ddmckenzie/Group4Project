@@ -23,7 +23,6 @@ public class SlideDoor : MonoBehaviour
             Invoke("Coroutine", 0f);
             bathroomDoor_Audio.Play();
         }
-        //bathroomDoor_Audio.Play();
     }
     private void Coroutine()
     {

@@ -7,16 +7,19 @@ public class LockerOpen : MonoBehaviour
 
     private bool DoorOpened;
     private Vector3 DoorStartPos;
+    AudioSource LockerDoorAudio;
 
     //When the scene loads the door is set to be closed by default, and its starting position is referenced
     void Start()
     {
+        LockerDoorAudio = GameObject.Find("Locker SFX").GetComponent<AudioSource>();
         DoorOpened = false;
         DoorStartPos = transform.position;
     }
 
     private void OnMouseDown()
     {
+        LockerDoorAudio.Play();
         Invoke("Coroutine", 0f); //Do this when mouse is clicked on door
     }
 
