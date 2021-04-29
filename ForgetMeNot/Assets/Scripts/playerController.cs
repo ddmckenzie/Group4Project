@@ -12,10 +12,14 @@ public class playerController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth/2;
+        if (SaveManager.instance.hasLoaded)
+        {
+            currentHealth = SaveManager.instance.activeSave.health;
+        }
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
-        gasOn = false;
 
+        gasOn = false;
     }
 
     // Update is called once per frame
@@ -33,6 +37,7 @@ public class playerController : MonoBehaviour
         if (other.tag == "Hazard")
         {
             TakeDamage(0.4f);   
+
         }
         else if (other.tag == "DeathHazard")
         {
@@ -45,12 +50,23 @@ public class playerController : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        SaveHealth();
     }
 
     public void AddHealth(float health)
     {
         currentHealth += health;
         healthBar.SetHealth(currentHealth);
+        SaveHealth();
+    }
+
+    void SaveHealth()
+    {
+        GameManager.instance.health = currentHealth;
+        SaveManager.instance.activeSave.health = currentHealth;
+        SaveManager.instance.Save();
+
+        Debug.Log("Saving health info");
     }
    
 }
