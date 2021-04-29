@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1418,21 +1418,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SurveyLock
       objectReference: {fileID: 0}
-    - target: {fileID: 1872262956862613010, guid: 8d72375b3f8be7a4ab04b007de66bf15,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3496743963606899348, guid: 8d72375b3f8be7a4ab04b007de66bf15,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4819851422510513074, guid: 8d72375b3f8be7a4ab04b007de66bf15,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 92bf6a434f68f1247a28f47550ebf0ae, type: 2}
     - target: {fileID: 6224850290335773074, guid: 8d72375b3f8be7a4ab04b007de66bf15,
         type: 3}
       propertyPath: m_RootOrder
