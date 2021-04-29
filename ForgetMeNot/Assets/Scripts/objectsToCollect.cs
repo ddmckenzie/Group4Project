@@ -18,6 +18,7 @@ public class objectsToCollect : MonoBehaviour
         {
             if (SaveManager.instance.activeSave.inventory.Contains(gameObject.name))
             {
+                keys = 0;
                 Destroy(gameObject);
             }
         }
@@ -30,6 +31,12 @@ public class objectsToCollect : MonoBehaviour
             keys--;
             gameObject.SetActive(false);
             keyAudio.Play();
+
+            GameManager.instance.inventory.Add(gameObject.name);
+            SaveManager.instance.activeSave.inventory.Add(gameObject.name);
+            SaveManager.instance.Save();
+
+            Debug.Log("Object added to inventory");
         }
     }
 }

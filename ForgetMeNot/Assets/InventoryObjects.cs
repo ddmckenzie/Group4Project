@@ -17,12 +17,10 @@ public class InventoryObjects : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!GameManager.instance.inventory.Contains(gameObject.name))
-        {
-            GameManager.instance.inventory.Add(gameObject.name);
-            SaveManager.instance.activeSave.inventory.Add(gameObject.name);
-            SaveManager.instance.Save();
-        }
-        
+        GameManager.instance.inventory.Add(gameObject.name);
+        SaveManager.instance.activeSave.inventory.Add(gameObject.name);
+        SaveManager.instance.Save();
+
+        Debug.Log("Object added to inventory");
     }
 }
