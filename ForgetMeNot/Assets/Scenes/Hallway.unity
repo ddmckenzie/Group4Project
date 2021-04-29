@@ -2200,6 +2200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6219279686490963614, guid: 03bd891257b63104f89266bbe0b08cbb,
         type: 3}
+      propertyPath: m_Name
+      value: FirstPersonPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6219279686490963614, guid: 03bd891257b63104f89266bbe0b08cbb,
+        type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -5104,7 +5109,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3984ae9a7139964499727522ddf0f09c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.083
+  m_Volume: 0.753
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5113,7 +5118,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 8
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
