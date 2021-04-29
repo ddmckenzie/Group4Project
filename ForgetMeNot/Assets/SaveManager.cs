@@ -15,18 +15,6 @@ public class SaveManager : MonoBehaviour
 
     private void Awake()
     {
-        //if (instance == null)
-        //{
-        //    DontDestroyOnLoad(gameObject);
-        //    instance = this;
-        //
-        //    Load();
-        //}
-        //else if (instance != this)
-        //{
-        //    Destroy(gameObject);
-        //}
-
         instance = this;
 
         Load();

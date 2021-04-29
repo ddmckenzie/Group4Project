@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    //Variables in SaveData
     public static GameManager instance;
 
     public Vector3 respawnPoint;
@@ -27,14 +28,17 @@ public class GameManager : MonoBehaviour
 
         if (SaveManager.instance.hasLoaded)
         {
+            //Respwaning position
             respawnPoint = SaveManager.instance.activeSave.respawnPosition;
             //Change player's position to that point
 
+            //Player health
             health = SaveManager.instance.activeSave.health;
-            //FirstPersonPlayer.GetComponent<>
-
+            
+            //Level Progression
             levelProgress = SaveManager.instance.activeSave.levelProgress;
 
+            //Inventory
             if (SaveManager.instance.activeSave.inventory.Count!=0)
             {
                 foreach (string s in SaveManager.instance.activeSave.inventory)
