@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3378606454440419043}
+  - component: {fileID: 8799346823831397953}
   m_Layer: 0
   m_Name: MRI
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8799346823831397953
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656386057170540567}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7624028, y: 2.5106297, z: 6.485025}
+  m_Center: {x: 0.017982837, y: -0.75531447, z: -3.120168}
 --- !u!1 &4564887272524835029
 GameObject:
   m_ObjectHideFlags: 0
