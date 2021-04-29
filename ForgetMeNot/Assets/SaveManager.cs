@@ -15,18 +15,20 @@ public class SaveManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
 
-        Load();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
+            Load();
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
