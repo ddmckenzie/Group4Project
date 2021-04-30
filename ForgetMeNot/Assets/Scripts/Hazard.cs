@@ -15,14 +15,11 @@ public class Hazard : MonoBehaviour
     }
     void OnTriggerEnter(Collider coll)
     {
-
-            heatAudio.Play();
-
-
-        if (gameObject.tag == "Hallway") 
-        {
-            heatAudio.Stop();
+        if (gameObject.tag == "Hazard") 
+        { 
+            heatAudio.Play(); 
         }
+
     }
     // Update is called once per frame
     void Update()

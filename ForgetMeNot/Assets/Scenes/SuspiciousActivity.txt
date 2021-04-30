@@ -1,0 +1,1 @@
+We caught one of the employees searching through a restricted part of the database last night, we cut off their connection when we discovered but we don't know who it is yet. We will track their IP and locate the computer that was used. If we're lucky, it was an employee who was dumb enough to use their own computer.
