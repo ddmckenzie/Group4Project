@@ -11,7 +11,7 @@ public class SlideDoorUp : MonoBehaviour
 
     void Start()
     {
-        slideDoorUpAud = GameObject.Find("Door").GetComponent<AudioSource>();
+        slideDoorUpAud = GameObject.Find("GameObject Main Door").GetComponent<AudioSource>();
         isOpened = false;
         DoorStart = transform.position;
     }
