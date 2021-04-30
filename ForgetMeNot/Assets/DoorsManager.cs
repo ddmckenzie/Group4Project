@@ -11,7 +11,11 @@ public class DoorsManager : MonoBehaviour
     //Enables the box colliders for the doors based on the progress number in PlayerPrefs
     void Awake()
     {
-        doorsUnlocked = PlayerPrefs.GetInt("DoorsUnlocked");
+        doorsUnlocked = 0;
+        if (SaveManager.instance.hasLoaded)
+        {
+            doorsUnlocked = SaveManager.instance.activeSave.levelProgress;
+        }
         transform.GetChild(0).GetComponent<BoxCollider>().enabled = true;
         Debug.Log("Bedroom Unlocked");
 
