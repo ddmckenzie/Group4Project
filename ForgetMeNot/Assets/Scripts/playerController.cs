@@ -5,19 +5,25 @@ using UnityEngine;
 public class playerController : MonoBehaviour
 {
     public float maxHealth = 100f;
+    public float maxArmor = 50f;
     public float currentHealth;
+    public float currentArmor;
     public bool gasOn;
     public Healthbar healthBar;
+    public ArmorBar armorBar;
 
     void Start()
     {
         currentHealth = maxHealth/2;
+        currentArmor = 0f;
         if (SaveManager.instance.hasLoaded)
         {
             currentHealth = SaveManager.instance.activeSave.health;
         }
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
+        armorBar.SetMaxArmor(maxArmor);
+        armorBar.SetArmor(currentArmor);
 
         gasOn = false;
     }
@@ -48,9 +54,21 @@ public class playerController : MonoBehaviour
 
     void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (currentArmor > 0)
+        {
+            currentArmor -= damage;
+            armorBar.SetArmor(currentArmor);
+        }
+        else
+        {
+            if (currentHealth > 0)
+            {
+                currentHealth -= damage;
+                healthBar.SetHealth(currentHealth);
+            }
+        }
         SaveHealth();
+        //SaveArmor();
     }
 
     public void AddHealth(float health)
@@ -58,6 +76,12 @@ public class playerController : MonoBehaviour
         currentHealth += health;
         healthBar.SetHealth(currentHealth);
         SaveHealth();
+    }
+
+    public void AddArmor(float armor)
+    {
+        currentArmor += armor;
+        armorBar.SetArmor(currentArmor);
     }
 
     void SaveHealth()
