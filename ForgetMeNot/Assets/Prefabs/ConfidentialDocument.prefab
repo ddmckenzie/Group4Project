@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 2438367131600212929}
   - component: {fileID: 1619336991148334180}
   - component: {fileID: 3575291993537587374}
+  - component: {fileID: 5966515025968153745}
+  - component: {fileID: 6684728878652518949}
   m_Layer: 0
-  m_Name: PaperModel1
+  m_Name: ConfidentialDocument
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,3 +83,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5966515025968153745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3070611964812364155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999998, z: 0.000346352}
+  m_Center: {x: 1.9675515e-14, y: 0, z: 0.000117409014}
+--- !u!114 &6684728878652518949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3070611964812364155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb8dbc51eb6b394582f6c6bd16dcbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: 
