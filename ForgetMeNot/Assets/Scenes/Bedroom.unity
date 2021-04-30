@@ -1605,7 +1605,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16446
+  m_Name: pb_Mesh62298
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2105,37 +2105,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df309d2cf9563ac4b9d0bf062981a292, type: 3}
---- !u!1 &605110994 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1726896581685347595, guid: f4cec12ab95762d4ba749dfebed28c61,
-    type: 3}
-  m_PrefabInstance: {fileID: 1916755608}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &605110995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605110994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb9912e962119641bfa840623c5a38a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &605110997
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605110994}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4889408, y: 6.0866847, z: 1.5026007}
-  m_Center: {x: 0.0132248495, y: 1.6917943, z: 0.011728486}
 --- !u!1 &677975472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dbf6b1275ac78c458e2e6802c3f4b11,
@@ -3113,7 +3082,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16644
+  m_Name: pb_Mesh62482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3454,7 +3423,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17366
+  m_Name: pb_Mesh62588
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7234,7 +7203,33 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7904007889785000965, guid: f4cec12ab95762d4ba749dfebed28c61,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 10.306791
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904007889785000965, guid: f4cec12ab95762d4ba749dfebed28c61,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 8.462267
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904007889785000965, guid: f4cec12ab95762d4ba749dfebed28c61,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03566326
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904007889785000965, guid: f4cec12ab95762d4ba749dfebed28c61,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 3.4343228
+      objectReference: {fileID: 0}
+    - target: {fileID: 7904007889785000965, guid: f4cec12ab95762d4ba749dfebed28c61,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.13366911
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f4cec12ab95762d4ba749dfebed28c61, type: 3}
 --- !u!1001 &1927558034
 PrefabInstance:
