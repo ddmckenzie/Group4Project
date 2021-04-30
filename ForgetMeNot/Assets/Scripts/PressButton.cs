@@ -7,12 +7,14 @@ public class PressButton : MonoBehaviour
     Vector3 StartPos;
     public bool isPressed;
     int count;
+    public GameObject player;
+    private playerController playerCScript;
     // Start is called before the first frame update
     void Start()
     {
+        playerCScript = player.GetComponent<playerController>();
         StartPos = transform.position;
         isPressed = false;
-        count = 0;
     }
 
     // Update is called once per frame
@@ -28,10 +30,10 @@ public class PressButton : MonoBehaviour
 
     private IEnumerator Press()
     {
-        if (!isPressed && count == 0)
+        if (!isPressed)
         {
             transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - 0.05f, transform.localPosition.z);
-            count++;
+            playerCScript.gasOn = false;
         }
         isPressed = true;
         yield return new WaitForSeconds(0f);
