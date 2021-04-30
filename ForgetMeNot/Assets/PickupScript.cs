@@ -31,6 +31,7 @@ public class PickupScript : MonoBehaviour
         {
             gameObject.SetActive(false);
             shieldAudio.Play();
+            _playerCScript.AddArmor(25f);
         }
     }
 
@@ -47,6 +48,7 @@ public class PickupScript : MonoBehaviour
         {
             gameObject.SetActive(false);
             shieldAudio.Play();
+            _playerCScript.AddArmor(25f);
         }
     }
 
