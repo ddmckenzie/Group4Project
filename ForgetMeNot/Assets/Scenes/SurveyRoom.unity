@@ -1467,6 +1467,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red_GreenButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4236522164793933978, guid: e656c78e8c46dac46acb01730fa7adb4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4843156695347671664, guid: e656c78e8c46dac46acb01730fa7adb4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
