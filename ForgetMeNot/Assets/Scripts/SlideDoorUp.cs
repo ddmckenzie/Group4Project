@@ -7,15 +7,18 @@ public class SlideDoorUp : MonoBehaviour
 
     private bool isOpened;
     private Vector3 DoorStart;
+    AudioSource slideDoorUpAud;
 
     void Start()
     {
+        slideDoorUpAud = GameObject.Find("Door").GetComponent<AudioSource>();
         isOpened = false;
         DoorStart = transform.position;
     }
 
     private void OnMouseDown()
     {
+        slideDoorUpAud.Play();
         Invoke("Coroutine", 0f);
     }
 
