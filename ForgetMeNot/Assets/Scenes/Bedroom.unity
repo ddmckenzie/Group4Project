@@ -7088,8 +7088,13 @@ PrefabInstance:
     - target: {fileID: 6684728878652518949, guid: f96075fd07a475a418edc18e1815afd2,
         type: 3}
       propertyPath: text
-      value: Hi there Nino!
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6684728878652518949, guid: f96075fd07a475a418edc18e1815afd2,
+        type: 3}
+      propertyPath: textFile
+      value: 
+      objectReference: {fileID: 4900000, guid: 0b253f930d3313d40b8f582f6f8cfb1b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f96075fd07a475a418edc18e1815afd2, type: 3}
 --- !u!114 &1776222413 stripped

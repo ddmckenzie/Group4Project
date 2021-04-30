@@ -61,8 +61,11 @@ public class playerController : MonoBehaviour
         }
         else
         {
-            currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
+            if (currentHealth > 0)
+            {
+                currentHealth -= damage;
+                healthBar.SetHealth(currentHealth);
+            }
         }
         SaveHealth();
         //SaveArmor();
