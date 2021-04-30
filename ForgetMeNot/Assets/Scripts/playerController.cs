@@ -34,7 +34,7 @@ public class playerController : MonoBehaviour
         //currentHealth = healthBar.slider.value; // This is a temporary fix but is kinda buggy
         if (gasOn)
         {
-            TakeDamage(0.1f);  
+            TakeDamage(0.01f);  
         }
     }
 
