@@ -13,9 +13,13 @@ public class ViewPaper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (textFile == null)
+        if (textFile == null && text == "")
         {
             text = "Not important...";
+        }
+        else if (textFile == null && text != "")
+        {
+            
         }
         else
         {

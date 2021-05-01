@@ -137,6 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7213392188751509730}
   - component: {fileID: 1836883946821484117}
+  - component: {fileID: 5529902347613240698}
   m_Layer: 0
   m_Name: lazer
   m_TagString: Hazard
@@ -174,6 +175,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 70.91443}
   m_Center: {x: -3.0175406e-14, y: 0, z: 34.957073}
+--- !u!114 &5529902347613240698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4510866674833961357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb8dbc51eb6b394582f6c6bd16dcbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 0}
+  Textfield: {fileID: 0}
+  text: This looks dangerous.
 --- !u!1 &5512130374958086404
 GameObject:
   m_ObjectHideFlags: 0
