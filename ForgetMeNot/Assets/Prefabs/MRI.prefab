@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3378606454440419043}
   - component: {fileID: 8799346823831397953}
+  - component: {fileID: -1898192770379167290}
   m_Layer: 0
   m_Name: MRI
   m_TagString: Untagged
@@ -47,6 +48,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.7624028, y: 2.5106297, z: 6.485025}
   m_Center: {x: 0.017982837, y: -0.75531447, z: -3.120168}
+--- !u!114 &-1898192770379167290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656386057170540567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb8dbc51eb6b394582f6c6bd16dcbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 0}
+  Textfield: {fileID: 0}
+  text: An MRI? Looks expensive.
 --- !u!1 &4564887272524835029
 GameObject:
   m_ObjectHideFlags: 0

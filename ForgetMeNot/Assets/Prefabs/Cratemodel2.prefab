@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1810096880595608317}
   - component: {fileID: 731555184957547159}
   - component: {fileID: 7385617777087614457}
+  - component: {fileID: 4370082848228526587}
   m_Layer: 0
   m_Name: Cratemodel2
   m_TagString: Untagged
@@ -62,6 +63,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4370082848228526587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003011753539154938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb8dbc51eb6b394582f6c6bd16dcbed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFile: {fileID: 0}
+  Textfield: {fileID: 0}
+  text: There's weapons in here... Wonder what they were using them for.
 --- !u!1 &3657991386256184201
 GameObject:
   m_ObjectHideFlags: 0

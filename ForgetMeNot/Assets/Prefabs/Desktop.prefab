@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textFile: {fileID: 0}
   Textfield: {fileID: 0}
-  text: 
+  text: Its not displaying anything... I think the OS has been wiped.
 --- !u!65 &1662462807766698246
 BoxCollider:
   m_ObjectHideFlags: 0
