@@ -30,64 +30,6 @@ public class DoorsManager : MonoBehaviour
             reset();
         }
 
-        /*doorsUnlocked = 3;
-        if (SaveManager.instance.hasLoaded)
-        {
-            doorsUnlocked = SaveManager.instance.activeSave.levelProgress;
-        }
-        else {
-            GameManager.instance.levelProgress = doorsUnlocked;
-            SaveManager.instance.activeSave.levelProgress = doorsUnlocked;
-            SaveManager.instance.Save();
-        }
-        transform.GetChild(0).GetComponent<BoxCollider>().enabled = true;
-        Debug.Log("Bedroom Unlocked");
-
-        for (int i = 1; i < transform.childCount; i++)
-        {
-            if (transform.GetChild(i).GetComponent<BoxCollider>() == true)
-            {
-                transform.GetChild(i).GetComponent<BoxCollider>().enabled = false;
-            }
-            else
-            {
-                transform.GetChild(i).Find("Door").GetComponent<BoxCollider>().enabled = false;
-            }
-            
-        }
-
-        switch (doorsUnlocked)
-        {
-            case 1:
-                transform.GetChild(1).GetComponent<BoxCollider>().enabled = true;
-                transform.GetChild(4).Find("Door").GetComponent<BoxCollider>().enabled = true;
-                Debug.Log("Office and Storage Unlocked");
-                break;
-
-            case 2:
-                transform.GetChild(1).GetComponent<BoxCollider>().enabled = true;
-                transform.GetChild(3).GetComponent<BoxCollider>().enabled = true;
-                transform.GetChild(4).Find("Door").GetComponent<BoxCollider>().enabled = true;
-                Debug.Log("Office, Lab, and Storage Unlocked");
-                break;
-
-            case 3:
-                for (int i = 1; i < transform.childCount; i++)
-                {
-                    if (transform.GetChild(i).GetComponent<BoxCollider>() == true)
-                    {
-                        transform.GetChild(i).GetComponent<BoxCollider>().enabled = true;
-                    }
-                    else
-                    {
-                        transform.GetChild(i).Find("Door").GetComponent<BoxCollider>().enabled = true;
-                    }
-
-                }
-                Debug.Log("All rooms are unlocked");
-                break;
-        }*/
-
     }
 
     //Unlocks door
