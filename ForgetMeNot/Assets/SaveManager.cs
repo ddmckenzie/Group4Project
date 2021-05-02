@@ -93,4 +93,6 @@ public class SaveData
     public int levelProgress;
 
     public List<string> inventory;
+
+    public List<int> unlockedDoors;
 }

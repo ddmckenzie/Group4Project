@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenuScript : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         SaveManager.instance.DeleteSaveData();
     }
