@@ -108,4 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb8dbc51eb6b394582f6c6bd16dcbed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textFile: {fileID: 0}
+  Textfield: {fileID: 0}
   text: 
