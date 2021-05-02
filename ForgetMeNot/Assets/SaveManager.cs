@@ -90,7 +90,11 @@ public class SaveData
 
     public float health;
 
+    public float armor;
+
     public int levelProgress;
 
     public List<string> inventory;
+
+    public List<int> unlockedDoors;
 }
