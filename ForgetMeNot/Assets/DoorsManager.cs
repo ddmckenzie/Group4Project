@@ -12,13 +12,13 @@ public class DoorsManager : MonoBehaviour
     void Awake()
     {
         doorsUnlocked = 3;
-        //if (SaveManager.instance.hasLoaded)
-        //{
-        //    doorsUnlocked = SaveManager.instance.activeSave.levelProgress;
-        //}
-        //else {
-        //    SaveManager.instance.activeSave.levelProgress = doorsUnlocked;
-        //}
+        if (SaveManager.instance.hasLoaded)
+        {
+            doorsUnlocked = SaveManager.instance.activeSave.levelProgress;
+        }
+        else {
+            SaveManager.instance.activeSave.levelProgress = doorsUnlocked;
+        }
         transform.GetChild(0).GetComponent<BoxCollider>().enabled = true;
         Debug.Log("Bedroom Unlocked");
 
@@ -84,6 +84,6 @@ public class DoorsManager : MonoBehaviour
             }
 
         }
-        PlayerPrefs.DeleteAll();
+        SaveManager.instance.activeSave.levelProgress = 1;
     }
 }
