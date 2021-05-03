@@ -8176,6 +8176,8 @@ GameObject:
   - component: {fileID: 5523308403841932359}
   - component: {fileID: 4049447334922373268}
   - component: {fileID: 726225328827767688}
+  - component: {fileID: 2870286929708291268}
+  - component: {fileID: 2870286929708291269}
   m_Layer: 0
   m_Name: Wire3
   m_TagString: Untagged
@@ -8183,6 +8185,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &2870286929708291268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870286929708291267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006096, y: 0.006095999, z: 0.0060959985}
+  m_Center: {x: 0.00000011920929, y: 0, z: -9.313226e-10}
+--- !u!114 &2870286929708291269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870286929708291267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a18300b8c6ed3647aee51f02a1ecca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 760213325}
 --- !u!4 &2904194744108308039
 Transform:
   m_ObjectHideFlags: 0
