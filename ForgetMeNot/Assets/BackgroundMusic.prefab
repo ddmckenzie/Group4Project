@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4819272014726827592}
   - component: {fileID: 2110158414304461445}
   m_Layer: 0
-  m_Name: Background Music
+  m_Name: BackgroundMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,6 +144,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   clip1: {fileID: 0}
   clip2: {fileID: 0}
+  fader: {fileID: 0}
+  transitionTime: 1
 --- !u!95 &2110158414304461445
 Animator:
   serializedVersion: 3
