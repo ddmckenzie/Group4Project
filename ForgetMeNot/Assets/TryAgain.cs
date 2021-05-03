@@ -6,6 +6,10 @@ public class TryAgain : MonoBehaviour
 {
     public LevelLoader loader;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+    }
     public void ResetCheckpoint()
     {
         //Resets health to 50 and armor to 0
