@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PasswordToPrevious : MonoBehaviour
 {
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 
     public void prevScene()
     {

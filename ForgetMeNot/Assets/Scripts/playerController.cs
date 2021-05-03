@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
@@ -36,6 +37,11 @@ public class playerController : MonoBehaviour
         if (gasOn)
         {
             TakeDamage(0.01f);  
+        }
+
+        if (currentHealth<=0)
+        {
+            SceneManager.LoadScene("GameOVMenu");
         }
     }
 
