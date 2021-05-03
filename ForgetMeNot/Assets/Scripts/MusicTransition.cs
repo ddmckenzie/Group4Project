@@ -34,15 +34,24 @@ public class MusicTransition : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Bedroom" || SceneManager.GetActiveScene().name == "Combination")
         {
-            if (audioSource.clip!=clip1)
+            if (audioSource.clip != clip1)
             {
                 StartCoroutine(changeClip(clip1));
             }
         }
+        else if (SceneManager.GetActiveScene().name == "GameOVMenu")
+        {
+            audioSource.Stop();
+        }
         else
         {
-            if (audioSource.clip!=clip2) {
+            if (audioSource.clip != clip2)
+            {
                 StartCoroutine(changeClip(clip2));
+            }
+            else if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
             }
         }
     }

@@ -40,4 +40,10 @@ public class TryAgain : MonoBehaviour
             loader.LoadRoom("Bedroom");
         }
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("QUIT!");
+        Application.Quit();
+    }
 }
