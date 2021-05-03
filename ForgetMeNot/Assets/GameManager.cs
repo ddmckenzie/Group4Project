@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public float health;
 
+    public float armor;
+
     public int levelProgress;
 
     public List<string> inventory;
@@ -36,7 +38,10 @@ public class GameManager : MonoBehaviour
 
             //Player health
             health = SaveManager.instance.activeSave.health;
-            
+
+            //Player armor
+            armor = SaveManager.instance.activeSave.armor;
+
             //Level Progression
             levelProgress = SaveManager.instance.activeSave.levelProgress;
 
@@ -62,6 +67,9 @@ public class GameManager : MonoBehaviour
         {
             //Health
             SaveManager.instance.activeSave.health = health;
+
+            //Armor
+            SaveManager.instance.activeSave.armor = armor;
 
             //Level Progress
             SaveManager.instance.activeSave.levelProgress =  levelProgress;
