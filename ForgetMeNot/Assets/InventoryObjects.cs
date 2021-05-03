@@ -6,11 +6,12 @@ public class InventoryObjects : MonoBehaviour
 {
     void Start()
     {
+        gameObject.SetActive(true);
         if (SaveManager.instance.hasLoaded)
         {
             if (SaveManager.instance.activeSave.inventory.Contains(gameObject.name))
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
@@ -21,6 +22,7 @@ public class InventoryObjects : MonoBehaviour
         SaveManager.instance.activeSave.inventory.Add(gameObject.name);
         SaveManager.instance.Save();
 
+        gameObject.SetActive(false);
         Debug.Log("Object added to inventory");
     }
 }

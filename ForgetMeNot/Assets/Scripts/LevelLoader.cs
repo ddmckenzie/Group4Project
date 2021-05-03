@@ -14,19 +14,19 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        SaveManager.instance.Save();
+        //SaveManager.instance.Save();
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void LoadRoom(int room) //Loads room by its scene index
     {
-        SaveManager.instance.Save();
+        //SaveManager.instance.Save();
         StartCoroutine(LoadLevel(room));
     }
 
     public void LoadRoom(string room) //Loads room by its name
     {
-        SaveManager.instance.Save();
+        //SaveManager.instance.Save();
         StartCoroutine(LoadLevel(room));
     }
 

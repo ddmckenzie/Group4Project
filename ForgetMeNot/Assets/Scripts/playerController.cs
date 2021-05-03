@@ -19,6 +19,7 @@ public class playerController : MonoBehaviour
         if (SaveManager.instance.hasLoaded)
         {
             currentHealth = SaveManager.instance.activeSave.health;
+            currentArmor = SaveManager.instance.activeSave.armor;
         }
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
@@ -34,7 +35,7 @@ public class playerController : MonoBehaviour
         //currentHealth = healthBar.slider.value; // This is a temporary fix but is kinda buggy
         if (gasOn)
         {
-            TakeDamage(0.1f);  
+            TakeDamage(0.01f);  
         }
     }
 
@@ -68,7 +69,7 @@ public class playerController : MonoBehaviour
             }
         }
         SaveHealth();
-        //SaveArmor();
+        SaveArmor();
     }
 
     public void AddHealth(float health)
@@ -82,6 +83,7 @@ public class playerController : MonoBehaviour
     {
         currentArmor += armor;
         armorBar.SetArmor(currentArmor);
+        SaveArmor();
     }
 
     void SaveHealth()
@@ -91,6 +93,15 @@ public class playerController : MonoBehaviour
         SaveManager.instance.Save();
 
         Debug.Log("Saving health info");
+    }
+
+    void SaveArmor()
+    {
+        GameManager.instance.armor = currentArmor;
+        SaveManager.instance.activeSave.armor = currentArmor;
+        SaveManager.instance.Save();
+
+        Debug.Log("Saving armor info");
     }
    
 }

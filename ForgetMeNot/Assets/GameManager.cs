@@ -13,9 +13,13 @@ public class GameManager : MonoBehaviour
 
     public float health;
 
+    public float armor;
+
     public int levelProgress;
 
     public List<string> inventory;
+
+    public List<int> unlockedDoors;
 
     private void Awake()
     {
@@ -34,7 +38,10 @@ public class GameManager : MonoBehaviour
 
             //Player health
             health = SaveManager.instance.activeSave.health;
-            
+
+            //Player armor
+            armor = SaveManager.instance.activeSave.armor;
+
             //Level Progression
             levelProgress = SaveManager.instance.activeSave.levelProgress;
 
@@ -46,14 +53,28 @@ public class GameManager : MonoBehaviour
                     inventory.Add(s);
                 }
             }
-            
+
+            //Unlocked doors
+            if (SaveManager.instance.activeSave.unlockedDoors.Count != 0)
+            {
+                foreach (int d in SaveManager.instance.activeSave.unlockedDoors)
+                {
+                    unlockedDoors.Add(d);
+                }
+            }
         }
         else
         {
+            //Health
             SaveManager.instance.activeSave.health = health;
 
+            //Armor
+            SaveManager.instance.activeSave.armor = armor;
+
+            //Level Progress
             SaveManager.instance.activeSave.levelProgress =  levelProgress;
 
+            //Inventory
             if (inventory.Count!=0)
             {
                 foreach (string s in inventory)
@@ -62,13 +83,16 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-        }
-    }
+            //Unlocked Doors
+            if (unlockedDoors.Count != 0)
+            {
+                foreach (int d in unlockedDoors)
+                {
+                    SaveManager.instance.activeSave.unlockedDoors.Add(d);
+                }
+            }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
     }
 
 }
