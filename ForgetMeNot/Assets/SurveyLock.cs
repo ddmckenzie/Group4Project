@@ -22,6 +22,8 @@ public class SurveyLock : MonoBehaviour
                     door.GetComponent<BoxCollider>().enabled = true; //unlocks door
                     door.transform.Find("LockImage").gameObject.SetActive(false); //removes lock image
 
+                    Debug.Log("Survey room unlocked");
+
                 }
 
                 //The orbs show in the lock
