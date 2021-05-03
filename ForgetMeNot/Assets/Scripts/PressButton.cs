@@ -27,10 +27,12 @@ public class PressButton : MonoBehaviour
     {
         StartCoroutine("Press");
 
-        if (!SaveManager.instance.activeSave.unlockedDoors.Contains(4))
+        if (!SaveManager.instance.activeSave.unlockedDoors.Contains(4) || !SaveManager.instance.activeSave.unlockedDoors.Contains(5))
         {
             GameManager.instance.unlockedDoors.Add(4); // 4 is index for storage door
+            GameManager.instance.unlockedDoors.Add(5); // 5 is index for exit door
             SaveManager.instance.activeSave.unlockedDoors.Add(4);
+            SaveManager.instance.activeSave.unlockedDoors.Add(5);
             SaveManager.instance.Save();
 
             Debug.Log("Unlocking Storage and Exit");

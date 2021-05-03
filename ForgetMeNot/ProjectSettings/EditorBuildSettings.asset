@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Combination.unity
     guid: 25762366813e3e14785238fcbf71dd93
+  - enabled: 1
+    path: Assets/GameOVMenu.unity
+    guid: 65975a0f7c5056042b9e8507d39d0291
   m_configObjects: {}
