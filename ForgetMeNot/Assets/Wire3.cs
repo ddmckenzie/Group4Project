@@ -23,7 +23,9 @@ public class Wire3 : MonoBehaviour
         if (SaveManager.instance.activeSave.inventory.Contains("ScrewDriver"))
         {
             GameManager.instance.unlockedDoors.Add(0); // 0 is index for bedroom door
+            GameManager.instance.unlockedDoors.Add(1); // 1 is index for office door
             SaveManager.instance.activeSave.unlockedDoors.Add(0);
+            SaveManager.instance.activeSave.unlockedDoors.Add(1);
             SaveManager.instance.Save();
 
             door.GetComponent<BoxCollider>().enabled = true; //unlocks door
@@ -32,7 +34,7 @@ public class Wire3 : MonoBehaviour
 
             gameObject.SetActive(false);
 
-            Debug.Log("Bedroom unlocked");
+            Debug.Log("Bedroom and office unlocked");
         }
         else
         { 
