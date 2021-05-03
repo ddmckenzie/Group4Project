@@ -6,6 +6,10 @@ public class TryAgain : MonoBehaviour
 {
     public LevelLoader loader;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+    }
     public void ResetCheckpoint()
     {
         //Resets health to 50 and armor to 0
@@ -20,9 +24,20 @@ public class TryAgain : MonoBehaviour
             SaveManager.instance.Save();
 
             Debug.Log("Reset health and armor");
-        }
 
-        //Loads Hallway
-        loader.LoadRoom("Hallway");
+            //If the bedroom has been unlocked, load hallway
+            if (SaveManager.instance.activeSave.unlockedDoors.Contains(0))
+            {
+                loader.LoadRoom("Hallway");
+            }
+            else
+            {
+                loader.LoadRoom("Bedroom");
+            }
+        }
+        else
+        {
+            loader.LoadRoom("Bedroom");
+        }
     }
 }
