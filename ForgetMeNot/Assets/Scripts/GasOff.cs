@@ -20,6 +20,9 @@ public class GasOff : MonoBehaviour
         if(buttonPressor.isPressed)
         {
             playerCScript.gasOn = false;
+            GameManager.instance.gasOn = false;
+            SaveManager.instance.activeSave.gasOn = false;
+            SaveManager.instance.Save();
         }
     }
 }
