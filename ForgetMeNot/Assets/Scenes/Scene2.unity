@@ -159,7 +159,7 @@ MonoBehaviour:
   - 'Unknown1: Jesus Christ...'
   - 'Unknown2: What?'
   typingSpeed: 0.02
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 174905296}
 --- !u!4 &96869881
 Transform:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &174905297
 RectTransform:
   m_ObjectHideFlags: 0

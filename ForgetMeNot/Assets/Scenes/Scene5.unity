@@ -643,7 +643,7 @@ MonoBehaviour:
   - 'Unknown2: Shut up will you! It''ll be hell for us if he wakes up now.'
   - 'Unknown2: I''m just putting him back to sleep is all.'
   typingSpeed: 0.02
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 1780634713}
 --- !u!4 &759872492
 Transform:
   m_ObjectHideFlags: 0
@@ -1141,7 +1141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1780634714
 RectTransform:
   m_ObjectHideFlags: 0

@@ -861,7 +861,7 @@ MonoBehaviour:
   - 'Unknown2: It''s a little too early for that Nino.'
   - 'Nino: (Nino? That''s...me. How does he know my name?)'
   typingSpeed: 0.02
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 1733300163}
 --- !u!4 &1322956380
 Transform:
   m_ObjectHideFlags: 0
@@ -1143,7 +1143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1733300164
 RectTransform:
   m_ObjectHideFlags: 0
