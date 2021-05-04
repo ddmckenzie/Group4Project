@@ -8,7 +8,7 @@ public class ExitDoor : MonoBehaviour
 
     void OnMouseDown()
     {
-        //loader.LoadRoom(""); //Add the name of the cutscene it's supposed to go to
+        loader.LoadRoom("EndScene1"); //Goes to the end cutscene
 
         Debug.Log("Exiting");
     }
