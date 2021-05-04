@@ -8,31 +8,23 @@ public class PickupScript : MonoBehaviour
     public GameObject player;
     AudioSource healthAudio;
     AudioSource shieldAudio;
+    AudioSource scDriverAudio;
     private playerController _playerCScript;
 
     void Start()
     {
         healthAudio = GameObject.Find("GameObject health").GetComponent<AudioSource>();
         shieldAudio = GameObject.Find("GameObject shield").GetComponent<AudioSource>();
+        scDriverAudio = GameObject.Find("GameObject screwdriver").GetComponent<AudioSource>();
         _playerCScript = player.GetComponent<playerController>();
     }
 
     void OnMouseDown()
     {
-        
-        if (gameObject.tag == "HealthPU") //health is below 100
+        if (gameObject.tag == "ScrewDriver") 
         {
-            gameObject.SetActive(false);
-            healthAudio.Play();
-            _playerCScript.AddHealth(10f);
-        }
-        
-        if (gameObject.tag == "ShieldPU") 
-        {
-            gameObject.SetActive(false);
-            shieldAudio.Play();
-            _playerCScript.AddArmor(25f);
-        }
+            scDriverAudio.Play();
+        } 
     }
 
     void OnTriggerEnter(Collider coll)
@@ -51,11 +43,5 @@ public class PickupScript : MonoBehaviour
             _playerCScript.AddArmor(25f);
         }
     }
-
-    //void AddHealth(float health) 
-    //{
-        //addH += health;
-        //hb.SetHealth(addH);
-    //}
 
 }

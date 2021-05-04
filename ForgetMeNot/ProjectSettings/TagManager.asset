@@ -11,6 +11,7 @@ TagManager:
   - Hazard
   - Heat Hazard
   - Hallway
+  - ScrewDriver
   layers:
   - Default
   - TransparentFX
