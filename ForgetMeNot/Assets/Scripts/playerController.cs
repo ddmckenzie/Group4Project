@@ -17,17 +17,20 @@ public class playerController : MonoBehaviour
     {
         currentHealth = maxHealth/2;
         currentArmor = 0f;
+        gasOn = false;
         if (SaveManager.instance.hasLoaded)
         {
             currentHealth = SaveManager.instance.activeSave.health;
             currentArmor = SaveManager.instance.activeSave.armor;
+            gasOn = SaveManager.instance.activeSave.gasOn;
         }
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetHealth(currentHealth);
         armorBar.SetMaxArmor(maxArmor);
         armorBar.SetArmor(currentArmor);
 
-        gasOn = false;
+        
+       
     }
 
     // Update is called once per frame
