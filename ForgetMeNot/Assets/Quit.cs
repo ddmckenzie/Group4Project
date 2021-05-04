@@ -8,7 +8,7 @@ public class Quit : MonoBehaviour
 
     public void QuitGame ()
     {
- 
+        SaveManager.instance.DeleteSaveData();
         Application.Quit();
     }
 }
