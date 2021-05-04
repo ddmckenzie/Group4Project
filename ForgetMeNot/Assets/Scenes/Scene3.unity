@@ -341,7 +341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1115177214
 RectTransform:
   m_ObjectHideFlags: 0
@@ -552,7 +552,7 @@ MonoBehaviour:
   - 'Unknown2: Anyways, don''t even think about going soft on me.'
   - 'Unknown 2: You had just as much to do with this as I did.'
   typingSpeed: 0
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 1115177213}
 --- !u!4 &1197127396
 Transform:
   m_ObjectHideFlags: 0

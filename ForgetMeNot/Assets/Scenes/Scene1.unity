@@ -268,7 +268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &555554623
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   - 'Nino: (Ughh this light is so bright ...)'
   - 'Nino: (My head is killing me..)'
   typingSpeed: 0.02
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 555554622}
 --- !u!4 &1884922938
 Transform:
   m_ObjectHideFlags: 0
