@@ -45,6 +45,9 @@ public class PressButton : MonoBehaviour
         {
             transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - 0.05f, transform.localPosition.z);
             playerCScript.gasOn = false;
+            GameManager.instance.gasOn = false;
+            SaveManager.instance.activeSave.gasOn = false;
+            SaveManager.instance.Save();
         }
         isPressed = true;
         yield return new WaitForSeconds(0f);
