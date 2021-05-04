@@ -21,6 +21,9 @@ public class GasTrigger : MonoBehaviour
 
     private void OnMouseDown()
     {
-            playerCScript.gasOn = true;
+        playerCScript.gasOn = true;
+        GameManager.instance.gasOn = true;
+        SaveManager.instance.activeSave.gasOn = true;
+        SaveManager.instance.Save();
     }
 }
