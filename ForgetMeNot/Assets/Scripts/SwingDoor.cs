@@ -7,16 +7,19 @@ public class SwingDoor : MonoBehaviour
 
     private bool DoorOpened;
     private Vector3 DoorStartPos;
+    AudioSource MetalDoorAudio;
 
     //When the scene loads the door is set to be closed by default, and its starting position is referenced
     void Start()
     {
+        MetalDoorAudio = GameObject.Find("Game Object Small Metal Door").GetComponent<AudioSource>();
         DoorOpened = false;
         DoorStartPos = transform.position;
     }
 
     private void OnMouseDown()
     {
+        MetalDoorAudio.Play();
         Invoke("Coroutine", 0f); //Do this when mouse is clicked on door
     }
 
