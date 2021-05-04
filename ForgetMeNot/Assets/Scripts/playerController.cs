@@ -80,15 +80,21 @@ public class playerController : MonoBehaviour
 
     public void AddHealth(float health)
     {
-        currentHealth += health;
-        healthBar.SetHealth(currentHealth);
+        if (currentHealth < maxHealth)
+        {
+            currentHealth += health;
+            healthBar.SetHealth(currentHealth);
+        }
         SaveHealth();
     }
 
     public void AddArmor(float armor)
     {
-        currentArmor += armor;
-        armorBar.SetArmor(currentArmor);
+        if (currentArmor < maxArmor)
+        {
+            currentArmor += armor;
+            armorBar.SetArmor(currentArmor);
+        }
         SaveArmor();
     }
 
