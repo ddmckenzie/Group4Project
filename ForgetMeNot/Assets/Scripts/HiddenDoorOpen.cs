@@ -16,7 +16,11 @@ public class HiddenDoorOpen : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (SaveManager.instance.hasLoaded && SaveManager.instance.activeSave.inventory.Contains("Orb1"))
+        {
             Invoke("Coroutine", 0f);
+        }
+            
     }
     private void Coroutine()
     {
