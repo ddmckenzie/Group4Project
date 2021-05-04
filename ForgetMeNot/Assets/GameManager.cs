@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 
     public List<int> unlockedDoors;
 
+    public bool gasOn;
+
     private void Awake()
     {
         instance = this;
@@ -62,6 +64,9 @@ public class GameManager : MonoBehaviour
                     unlockedDoors.Add(d);
                 }
             }
+
+            //Gas On
+            gasOn = SaveManager.instance.activeSave.gasOn;
         }
         else
         {
@@ -91,6 +96,9 @@ public class GameManager : MonoBehaviour
                     SaveManager.instance.activeSave.unlockedDoors.Add(d);
                 }
             }
+
+            //Gas On
+            SaveManager.instance.activeSave.gasOn = gasOn;
 
         }
     }
