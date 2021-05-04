@@ -97,4 +97,6 @@ public class SaveData
     public List<string> inventory;
 
     public List<int> unlockedDoors;
+
+    public bool gasOn;
 }
