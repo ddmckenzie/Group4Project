@@ -1,0 +1,6 @@
+Control Movements
+
+Use arrow keys or w,a,s,d to move
+Use mouse to change perspective
+Press on objects to interact
+Run into health and shield to pickup
