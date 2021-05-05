@@ -47,4 +47,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameOVMenu.unity
     guid: 65975a0f7c5056042b9e8507d39d0291
+  - enabled: 1
+    path: Assets/Scenes/EndScene1.unity
+    guid: b594f5c4ad5f16e4ba93b3f53dd84a6e
+  - enabled: 1
+    path: Assets/Scenes/EndScene2.unity
+    guid: 83d16bf92ec734d47b3dcdacd1cf16a0
+  - enabled: 1
+    path: Assets/Scenes/EndScene3.unity
+    guid: 56ef15a5133b5f047bd17a292e871f87
+  - enabled: 1
+    path: Assets/Scenes/EndScene4.unity
+    guid: f645df078d5922d449f9e99f2d6861c5
+  - enabled: 1
+    path: Assets/Scenes/ExitScene.unity
+    guid: fe4f52068a4d6b44d8e6e7020017f9d9
   m_configObjects: {}

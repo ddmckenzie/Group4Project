@@ -11,13 +11,15 @@ public class ShowCombination : MonoBehaviour
     void Start()
     {
         combination.image.enabled = false;
-        drawer.GetComponent<BoxCollider>().enabled = false;
+        combination.transform.Find("Placeholder").gameObject.SetActive(false);
+        combination.transform.Find("Text").gameObject.SetActive(false);
     }
 
     private void OnMouseDown()
     {
         Show();
         combination.ActivateInputField();
+        
     }
 
     // Update is called once per frame
@@ -38,10 +40,14 @@ public class ShowCombination : MonoBehaviour
     void Show()
     {
         combination.image.enabled = true;
+        combination.transform.Find("Placeholder").gameObject.SetActive(true);
+        combination.transform.Find("Text").gameObject.SetActive(true);
     }
 
     void Hide()
     {
         combination.image.enabled = false;
+        combination.transform.Find("Placeholder").gameObject.SetActive(false);
+        combination.transform.Find("Text").gameObject.SetActive(false);
     }
 }
