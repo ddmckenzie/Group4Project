@@ -9,8 +9,10 @@ public class MusicTransition : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clip1;
     public AudioClip clip2;
+    public AudioClip clip3;
     public Animator fader;
     public float transitionTime = 1f;
+    Scene scene;
 
     void Awake()
     {
@@ -32,14 +34,20 @@ public class MusicTransition : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Bedroom" || SceneManager.GetActiveScene().name == "Combination")
+        scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Bedroom" || scene.name == "Combination")
         {
             if (audioSource.clip != clip1)
             {
                 StartCoroutine(changeClip(clip1));
             }
         }
-        else if (SceneManager.GetActiveScene().name == "GameOVMenu")
+        else if (scene.name == "GameOVMenu")
+        {
+            audioSource.Stop();
+        }
+        else if (scene.buildIndex >= 14)
         {
             audioSource.Stop();
         }
