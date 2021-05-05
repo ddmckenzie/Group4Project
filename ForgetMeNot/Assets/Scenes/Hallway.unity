@@ -1088,6 +1088,16 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: f75b4e6dcb9f06945b75ba01dddb171c, type: 3}
     - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
         type: 3}
+      propertyPath: clip3
+      value: 
+      objectReference: {fileID: 8300000, guid: 510028ada8d23c4479014b4c5c6ab4b3, type: 3}
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
+      propertyPath: clip4
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b07252a9cdee1846ad61667976187da, type: 3}
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
       propertyPath: fader
       value: 
       objectReference: {fileID: 279287842}

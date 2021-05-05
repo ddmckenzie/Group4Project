@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6560,6 +6560,16 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: f75b4e6dcb9f06945b75ba01dddb171c, type: 3}
     - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
         type: 3}
+      propertyPath: clip3
+      value: 
+      objectReference: {fileID: 8300000, guid: 510028ada8d23c4479014b4c5c6ab4b3, type: 3}
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
+      propertyPath: clip4
+      value: 
+      objectReference: {fileID: 8300000, guid: 0b07252a9cdee1846ad61667976187da, type: 3}
+    - target: {fileID: 4819272014726827592, guid: 527a82904f0b0a249bd9597208bf2780,
+        type: 3}
       propertyPath: fader
       value: 
       objectReference: {fileID: 1354666226}
@@ -9177,6 +9187,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1373880599810216059, guid: 64909faba515c6246aba6da47c899d5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2681802229433160420, guid: 64909faba515c6246aba6da47c899d5f,
         type: 3}
       propertyPath: m_AnchorMax.x
