@@ -38,7 +38,7 @@ public class MusicTransition : MonoBehaviour
         scene = SceneManager.GetActiveScene();
 
         //Room scenes
-        if (scene.buildIndex >= 1 && scene.buildIndex <= 5)
+        if (scene.buildIndex >= 1 && scene.buildIndex <= 5 || scene.name == "Combination")
         {
             if (SaveManager.instance.hasLoaded)
             {

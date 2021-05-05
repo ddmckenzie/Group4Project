@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour
 {
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+    }
     public void nextScene()
     {
         //Loads each scene in the build settings queue and increments by 1 which is the next scene
