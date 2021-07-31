@@ -10,6 +10,7 @@ public class MusicTransition : MonoBehaviour
     public AudioClip clip1;
     public AudioClip clip2;
     public AudioClip clip3;
+    public AudioClip clip4;
     public Animator fader;
     public float transitionTime = 1f;
     Scene scene;
@@ -36,31 +37,77 @@ public class MusicTransition : MonoBehaviour
     {
         scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Bedroom" || scene.name == "Combination")
+        //Room scenes
+        if (scene.buildIndex >= 1 && scene.buildIndex <= 5 || scene.name == "Combination")
         {
-            if (audioSource.clip != clip1)
+            if (SaveManager.instance.hasLoaded)
             {
-                StartCoroutine(changeClip(clip1));
+                if (SaveManager.instance.activeSave.unlockedDoors.Contains(0) && SaveManager.instance.activeSave.gasOn == false)
+                {
+                    playClip(clip2);
+                }
+                else if (SaveManager.instance.activeSave.unlockedDoors.Contains(0) && SaveManager.instance.activeSave.gasOn == true)
+                {
+                    playClip(clip3);
+                }
+                else
+                {
+                    playClip(clip1);
+                }
             }
+            else playClip(clip1);
         }
+        //Game Over menu
         else if (scene.name == "GameOVMenu")
         {
             audioSource.Stop();
         }
-        else if (scene.buildIndex >= 14)
+        //Ending cutscenes
+        else if (scene.buildIndex >=14)
         {
-            audioSource.Stop();
+            playClip(clip4);
         }
-        else
+
+        //if (scene.name == "Bedroom" || scene.name == "Combination")
+        //{
+        //    if (audioSource.clip != clip1)
+        //    {
+        //        StartCoroutine(changeClip(clip1));
+        //    }
+        //}
+        //else if (scene.name == "GameOVMenu")
+        //{
+        //    audioSource.Stop();
+        //}
+        //else if (scene.buildIndex >= 14)
+        //{
+        //    if (audioSource.clip != clip4)
+        //    {
+        //        StartCoroutine(changeClip(clip4));
+        //    }
+        //}
+        //else
+        //{
+        //    if (audioSource.clip != clip2)
+        //    {
+        //        StartCoroutine(changeClip(clip2));
+        //    }
+        //    else if (!audioSource.isPlaying)
+        //    {
+        //        audioSource.Play();
+        //    }
+        //}
+    }
+
+    private void playClip(AudioClip clip)
+    {
+        if (audioSource.clip != clip)
         {
-            if (audioSource.clip != clip2)
-            {
-                StartCoroutine(changeClip(clip2));
-            }
-            else if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            StartCoroutine(changeClip(clip));
+        }
+        else if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
         }
     }
 
